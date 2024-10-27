@@ -1,5 +1,4 @@
-## PRAKTIKUM - 2
-# STRUKTUR KONDISI
+## PRAKTIKUM - 2. STRUKTUR DAN KONDISI
 
 # Kasus 1
 Buat program yang menghitung harga tiket bioskop. Tiket reguler berharga Rp50.000,
