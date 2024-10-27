@@ -69,3 +69,21 @@ Hasil tersebut dicetak dengan pesan berikut.
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Untitled%20Diagram.drawio(2).png?raw=true)
 # Hasil Eksekusi Program - 1
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-27%20180053.png?raw=true)
+
+# Kasus 2
+``` python
+def hitung(angka1, operator, angka2):
+    if operator == '+':
+        hasil = angka1 + angka2
+    elif operator == '-':
+        hasil = angka1 - angka2
+    elif operator == '*':
+        hasil = angka1 * angka2
+    elif operator == '/':
+        if angka2 !=0:
+            hasil = angka1 / angka2
+        else: hasil = "Pembagian dengan 0 tidak diperbolehkan"
+    else:
+        hasil = "Error: Operator tidak valid"
+        return hasil
+```
