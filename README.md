@@ -50,4 +50,4 @@ print(f"Harga tiket yang harus dibayar adalah: Rp.{harga}")
 # Flowchart Kode - 1
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Untitled%20Diagram.drawio(2).png?raw=true)
 # Hasil Eksekusi Program - 1
-![foto[()
+![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-27%20180053.png?raw=true)
