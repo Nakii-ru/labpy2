@@ -1,5 +1,10 @@
-## PRAKTIKUM - 2. STRUKTUR DAN KONDISI
+## PRAKTIKUM - STRUKTUR DAN KONDISI
 
+RIDHO FHADLY HAMZAH
+
+312410386
+
+TI.24.A5
 # Kasus 1
 Buat program yang menghitung harga tiket bioskop. Tiket reguler berharga Rp50.000,
 sedangkan tiket VIP berharga Rp100.000. Jika user memiliki kartu member, mereka
