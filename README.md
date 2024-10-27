@@ -47,4 +47,7 @@ harga = total_harga_tiket(jenis_tiket, member)
 print(f"Harga tiket yang harus dibayar adalah: Rp.{harga}")
 ```
 
-![foto]()
+# Flowchart Kode - 1
+![foto](https://github.com/Nakii-ru/foto/blob/main/Untitled%20Diagram.drawio(2).png?raw=true)
+# Hasil Eksekusi Program - 1
+![foto[()
