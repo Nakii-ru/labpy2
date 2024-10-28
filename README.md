@@ -28,7 +28,7 @@ harga = total_harga_tiket(jenis_tiket, member)
 
 print(f"Harga tiket yang harus dibayar: Rp {harga}")
 ```
-# Penjelasan Kode - 1
+# Penjelasan Kasus - 1
 ``` python
 def total_harga_tiket(jenis_tiket, member):
 ```
@@ -65,55 +65,73 @@ print(f"Harga tiket yang harus dibayar adalah: Rp.{harga}")
 ```
 Hasil tersebut dicetak dengan pesan berikut.
 
-# Flowchart Kode - 1
+# Flowchart Kasus - 1
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Untitled%20Diagram.drawio(2).png?raw=true)
 # Hasil Eksekusi Program - 1
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-27%20180053.png?raw=true)
 
-# Kode - 2
+# Kasus - 2
 ```python
 def hitung(angka1, operator, angka2):
     if operator == '+':
         hasil = angka1 + angka2
 
- 
-elif operator == '-':
+    elif operator == '-':
         hasil = angka1 - angka2
  
-elif operator == '*':
+    elif operator == '*':
         hasil = angka1 * angka2
  
-else:
+ else:
     operator == '/'
         hasil = angka1 / angka2
  
-        return hasil
+return hasil
 ```
-# Kasus - 2
+# Penjelasan Kasus - 2
 ``` python
 def hitung(angka1, operator, angka2):
 ```
+Baris pertama ialah deklarasi fungsi hitung yang menerima tiga parameter: `angka1`, `operator`, dan `angka2`. `angka1` dan `angka2` adalah angka yang akan dioperasikan, sedangkan operator adalah simbol operasi `(+, -, *, atau /)` yang akan digunakan pada angka tersebut.
 ```python
     if operator == '+':
+```
+if operator == `'+'`: Kondisi ini mengecek apakah operator adalah `+`. Jika benar, maka `angka1` dan `angka2` akan dijumlahkan.
+```python
         hasil = angka1 + angka2
 ```
+hasil = angka1 + angka2: Jika kondisi di atas terpenuhi, variabel hasil akan menyimpan hasil dari penjumlahan angka1 dan angka2.
 ``` python
     elif operator == '-':
+```
+elif operator == `'-'`: Kondisi ini akan memeriksa apakah operator adalah `-`. Jika benar, maka `angka1` dan `angka2` akan dikurangkan.
+```python
         hasil = angka1 - angka2
 ```
+hasil = angka1 - angka2: Variabel hasil menyimpan hasil pengurangan angka1 dan angka2.
 ``` python
     elif operator == '*':
+```
+hasil = angka1 * angka2: Variabel hasil menyimpan hasil perkalian angka1 dan angka2.
+elif operator == `'*'`: Kondisi ini memeriksa apakah operator adalah `*`. Jika benar, maka `angka1` dan `angka2` akan dikalikan.
+```python
         hasil = angka1 * angka2
 ```
+hasil = angka1 + angka2: Jika kondisi di atas terpenuhi, variabel hasil akan menyimpan hasil dari penjumlahan angka1 dan angka2.
 ``` python
     else:
         operator == '/'
+```
+`else:` Kondisi ini digunakan untuk operasi pembagian sebagai pilihan terakhir jika operator bukan +, -, atau *. yaitu membagi `'/'` bilangan `angka1` dan `angka2`.
+```python
         hasil = angka1 / angka2
 ```
+hasil = angka1 / angka2: hasil menyimpan hasil pembagian angka1 dan angka2.
 ``` python
-        return hasil
+return hasil
 ```
-# Flowchart Kode - 2
+Mengembalikan nilai hasil sebagai output dari fungsi hitung. nilai hasil dikembalikan setelah semua operasi selesai.
+# Flowchart Kasus - 2
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Untitled%20Diagram(2).drawio(1).png?raw=true)
-# Hasil Eksekusi Program - 2
+# Hasil Eksekusi Kasus - 2
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-28%20075642.png?raw=true)
