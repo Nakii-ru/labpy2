@@ -70,19 +70,47 @@ Hasil tersebut dicetak dengan pesan berikut.
 # Hasil Eksekusi Program - 1
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-27%20180053.png?raw=true)
 
-# Kasus - 2
-``` python
+# Kode - 2
+```python
 def hitung(angka1, operator, angka2):
     if operator == '+':
         hasil = angka1 + angka2
+
+ 
+elif operator == '-':
+        hasil = angka1 - angka2
+ 
+elif operator == '*':
+        hasil = angka1 * angka2
+ 
+else:
+    operator == '/'
+        hasil = angka1 / angka2
+ 
+        return hasil
+```
+# Kasus - 2
+``` python
+def hitung(angka1, operator, angka2):
+```
+```python
+    if operator == '+':
+        hasil = angka1 + angka2
+```
+``` python
     elif operator == '-':
         hasil = angka1 - angka2
+```
+``` python
     elif operator == '*':
         hasil = angka1 * angka2
+```
+``` python
     else:
         operator == '/'
         hasil = angka1 / angka2
-
+```
+``` python
         return hasil
 ```
 # Flowchart Kode - 2
