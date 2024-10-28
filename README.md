@@ -79,12 +79,10 @@ def hitung(angka1, operator, angka2):
         hasil = angka1 - angka2
     elif operator == '*':
         hasil = angka1 * angka2
-    elif operator == '/':
-        if angka2 !=0:
-            hasil = angka1 / angka2
-        else: hasil = "Pembagian dengan 0 tidak diperbolehkan"
     else:
-        hasil = "Error: Operator tidak valid"
+        operator == '/'
+        hasil = angka1 / angka2
+
         return hasil
 ```
 # Flowchart Kode - 2
