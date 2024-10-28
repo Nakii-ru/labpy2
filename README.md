@@ -88,6 +88,6 @@ def hitung(angka1, operator, angka2):
         return hasil
 ```
 # Flowchart Kode - 2
-![foto](https://github.com/Nakii-ru/foto/blob/main/Untitled%20Diagram.drawio(6).png?raw=true)
+![foto](https://github.com/Nakii-ru/foto/blob/main/Untitled%20Diagram(2).drawio(1).png?raw=true)
 # Hasil Eksekusi Program - 2
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-27%20230233.png?raw=true)
