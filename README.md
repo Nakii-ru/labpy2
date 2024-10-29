@@ -144,37 +144,6 @@ Mengembalikan nilai hasil sebagai output dari fungsi hitung. nilai hasil dikemba
 # Latihan 1
 Membuat program menentukan nilai akhir
 
-# Kode Latihan 1
-```python
-nama = input("masukkan nama: ")
-uts = input("masukkan nilai uts: ")
-uas = input("masukkan nilai uas: ")
-tugas = input("masukkan nilai tugas: ")
-
-akhir = (int(tugas) * .2) + (int(uts) * .4) + (int(uas) * .4)
-
-if akhir > 80:
-    huruf = "A"
-elif akhir > 70:
-    huruf = "B"
-elif akhir > 60:
-    huruf = "C"
-elif akhir > 40:
-    huruf = "D"
-else:
- huruf = "E"
-
-keterangan = ("TIDAK LULUS", "LULUS")[akhir > 60.0]
-
-print("\nNama:",nama)
-print("Nilai UTS:",uts)
-print("Nilai UAS:",uas)
-print("Nilai Tugas:",tugas)
-print("Nilai Akhir:",akhir)
-print("\nNilai Huruf:", huruf)
-print("Keterangan:",keterangan)
-```
-
 # Penjelasan Latihan 1
 ```python
 nama = input("masukkan nama: ")
@@ -227,3 +196,7 @@ print("Keterangan:",keterangan)
 ```
 Program akan menghasilkan output yang memberitahu pengguna apakah ia `lulus` atau `tidak`, beserta `nilai huruf`nya berdasarkan nilai `UTS`, `UAS`, dan `tugas`.
 Sesuai dengan perintah `Print` diatas.
+# Flowchart Latihan 1
+![foto](https://github.com/Nakii-ru/foto/blob/main/latprog1.drawio(1).png?raw=true)
+# Hasil Eksekusi Latihan 1
+![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-29%20132440.png?raw=true)
