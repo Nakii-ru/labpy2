@@ -11,7 +11,7 @@ Buat program yang menghitung harga tiket bioskop. Tiket reguler berharga Rp50.00
 sedangkan tiket VIP berharga Rp100.000. Jika user memiliki kartu member, mereka
 mendapatkan diskon 20% dari harga tiket. Program ini harus meminta tipe tiket dan status
 member dari user, lalu menghitung total harga yang harus dibayar.
-# Kode Program - 1
+# Kode Kasus - 1
 ``` python
 def total_harga_tiket(jenis_tiket, member):
     
@@ -71,6 +71,11 @@ Hasil tersebut dicetak dengan pesan berikut.
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-27%20180053.png?raw=true)
 
 # Kasus - 2
+Buat program kalkulator yang menerima dua angka dan satu operator aritmatika dari
+pengguna (penjumlahan, pengurangan, perkalian, atau pembagian). Program akan
+menghitung hasil sesuai dengan operator yang dipilih.
+
+# Kode Kasus - 2
 ```python
 def hitung(angka1, operator, angka2):
     if operator == '+':
@@ -135,3 +140,90 @@ Mengembalikan nilai hasil sebagai output dari fungsi hitung. nilai hasil dikemba
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Untitled%20Diagram(2).drawio(1).png?raw=true)
 # Hasil Eksekusi Kasus - 2
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-28%20075642.png?raw=true)
+
+# Latihan 1
+Membuat program menentukan nilai akhir
+
+# Kode Latihan 1
+```python
+nama = input("masukkan nama: ")
+uts = input("masukkan nilai uts: ")
+uas = input("masukkan nilai uas: ")
+tugas = input("masukkan nilai tugas: ")
+
+akhir = (int(tugas) * .2) + (int(uts) * .4) + (int(uas) * .4)
+
+if akhir > 80:
+    huruf = "A"
+elif akhir > 70:
+    huruf = "B"
+elif akhir > 60:
+    huruf = "C"
+elif akhir > 40:
+    huruf = "D"
+else:
+ huruf = "E"
+
+keterangan = ("TIDAK LULUS", "LULUS")[akhir > 60.0]
+
+print("\nNama:",nama)
+print("Nilai UTS:",uts)
+print("Nilai UAS:",uas)
+print("Nilai Tugas:",tugas)
+print("Nilai Akhir:",akhir)
+print("\nNilai Huruf:", huruf)
+print("Keterangan:",keterangan)
+```
+
+# Penjelasan Latihan 1
+```python
+nama = input("masukkan nama: ")
+uts = input("masukkan nilai uts: ")
+uas = input("masukkan nilai uas: ")
+tugas = input("masukkan nilai tugas: ")
+```
+Baris pertama dalam program ini digunakan untuk menerima `input` dari pengguna, terdapat empat kali pemanggilan `input` untuk mengambil:
+        `nama` - nama mahasiswa yang akan dinilai.
+        `uts` - nilai Ujian Tengah Semester.
+        `uas` - nilai Ujian Akhir Semester.
+        `tugas` - nilai tugas.
+```python
+akhir = (int(tugas) * .2) + (int(uts) * .4) + (int(uas) * .4)
+```
+Fungsi `int` ialah mengonversi nilai `tugas`, `uts`, dan `uas` dari tipe `string` menjadi `integer`.
+Konversi ini penting agar nilai dapat digunakan dalam operasi aritmatika.
+
+Lalu untuk menentukan bobot setiap nilai yang dimasukan, maka tiap bilangan yang akan diinputkan harus dikali dengan dengan ketentuan yg sudah ada
+    `tugas`: Mempunyai bobot 20% dalam perhitungan, dikalikan dengan `0.2`.
+    `uts`: Mempunyai bobot 40% dalam perhitungan, dikalikan dengan `0.4`.
+    `uas`: Mempunyai bobot 40% dalam perhitungan, dikalikan dengan `0.4`.
+    
+```python
+if akhir > 80:
+    huruf = "A"
+elif akhir > 70:
+    huruf = "B"
+elif akhir > 60:
+    huruf = "C"
+elif akhir > 40:
+    huruf = "D"
+else:
+ huruf = "E"
+```
+Jika proses akumulasi nilai di atas sudah berhasil, maka baris ini akan otomatis memasukan nilai sesuai dengan nilai akhir yg sudah di proses sebelumnya.
+Jika `nilai akhir` lebih dari `80`, maka huruf adalah `"A"`, jika lebih dari `70` tetapi tidak lebih dari `80`, maka huruf `"B`, dan seterusnya. Nilai di bawah `40` akan mendapatkan huruf `"E"`.
+```python
+keterangan = ("TIDAK LULUS", "LULUS")[akhir > 60.0]
+```
+Operasi ini akan memilih `print` ("LULUS") jika akhir > 60.0 bernilai True, dan sebaliknya memilih `print` ("TIDAK LULUS") jika akhir > 60.0 bernilai False.
+```python
+print("\nNama:",nama)
+print("Nilai UTS:",uts)
+print("Nilai UAS:",uas)
+print("Nilai Tugas:",tugas)
+print("Nilai Akhir:",akhir)
+print("\nNilai Huruf:", huruf)
+print("Keterangan:",keterangan)
+```
+Program akan menghasilkan output yang memberitahu pengguna apakah ia `lulus` atau `tidak`, beserta `nilai huruf`nya berdasarkan nilai `UTS`, `UAS`, dan `tugas`.
+Sesuai dengan perintah `Print` diatas.
