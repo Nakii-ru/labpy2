@@ -142,61 +142,87 @@ Mengembalikan nilai hasil sebagai output dari fungsi hitung. nilai hasil dikemba
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-28%20075642.png?raw=true)
 
 # Latihan 1
-Membuat program menentukan nilai akhir
+
 
 # Penjelasan Latihan 1
-```python
-nama = input("masukkan nama: ")
-uts = input("masukkan nilai uts: ")
-uas = input("masukkan nilai uas: ")
-tugas = input("masukkan nilai tugas: ")
-```
-Baris pertama dalam program ini digunakan untuk menerima `input` dari pengguna, terdapat empat kali pemanggilan `input` untuk mengambil:
-        `nama` - nama mahasiswa yang akan dinilai.
-        `uts` - nilai Ujian Tengah Semester.
-        `uas` - nilai Ujian Akhir Semester.
-        `tugas` - nilai tugas.
-```python
-akhir = (int(tugas) * .2) + (int(uts) * .4) + (int(uas) * .4)
-```
-Fungsi `int` ialah mengonversi nilai `tugas`, `uts`, dan `uas` dari tipe `string` menjadi `integer`.
-Konversi ini penting agar nilai dapat digunakan dalam operasi aritmatika.
+Kode ini adalah program yg menghitung nilai akhir seorang siswa berdasarkan nilai UTS, UAS, dan Tugas, lalu menentukan huruf nilai dan status kelulusan.
 
-Lalu untuk menentukan bobot setiap nilai yang dimasukan, maka tiap bilangan yang akan diinputkan harus dikali dengan dengan ketentuan yg sudah ada
-    `tugas`: Mempunyai bobot 20% dalam perhitungan, dikalikan dengan `0.2`.
-    `uts`: Mempunyai bobot 40% dalam perhitungan, dikalikan dengan `0.4`.
-    `uas`: Mempunyai bobot 40% dalam perhitungan, dikalikan dengan `0.4`.
-    
-```python
-if akhir > 80:
-    huruf = "A"
-elif akhir > 70:
-    huruf = "B"
-elif akhir > 60:
-    huruf = "C"
-elif akhir > 40:
-    huruf = "D"
-else:
- huruf = "E"
-```
-Jika proses akumulasi nilai di atas sudah berhasil, maka baris ini akan otomatis memasukan nilai sesuai dengan nilai akhir yg sudah di proses sebelumnya.
-Jika `nilai akhir` lebih dari `80`, maka huruf adalah `"A"`, jika lebih dari `70` tetapi tidak lebih dari `80`, maka huruf `"B`, dan seterusnya. Nilai di bawah `40` akan mendapatkan huruf `"E"`.
-```python
-keterangan = ("TIDAK LULUS", "LULUS")[akhir > 60.0]
-```
-Operasi ini akan memilih `print` ("LULUS") jika akhir > 60.0 bernilai True, dan sebaliknya memilih `print` ("TIDAK LULUS") jika akhir > 60.0 bernilai False.
-```python
-print("\nNama:",nama)
-print("Nilai UTS:",uts)
-print("Nilai UAS:",uas)
-print("Nilai Tugas:",tugas)
-print("Nilai Akhir:",akhir)
-print("\nNilai Huruf:", huruf)
-print("Keterangan:",keterangan)
-```
-Program akan menghasilkan output yang memberitahu pengguna apakah ia `lulus` atau `tidak`, beserta `nilai huruf`nya berdasarkan nilai `UTS`, `UAS`, dan `tugas`.
-Sesuai dengan perintah `Print` diatas.
+Program meminta pengguna untuk memasukkan `nama`, `uts`, `uas`, dan `tugas`.
+Nilai uts, uas, dan tugas yang dimasukkan adalah string, sehingga perlu dikonversi ke integer untuk perhitungan yg akan dimasukkan dalam 1 variabel `Nilai Akhir`
+        Nilai akhir dihitung berdasarkan bobot:
+            `Tugas` = 20% dari nilai akhir
+            `UTS` = 40% dari nilai akhir
+            `UAS`= 40% dari nilai akhir
+        Rumusnya adalah: akhir = (int(tugas) * .2) + (int(uts) * .4) + (int(uas) * .4)
+
+Menentukan Nilai Huruf:
+        Berdasarkan nilai akhir, program menentukan huruf nilai:
+            `A` jika nilai > 80
+            `B` jika nilai > 70
+            `C` jika nilai > 60
+            `D` jika nilai > 40
+            `E` untuk nilai di bawah atau sama dengan 40
+
+Menentukan Keterangan Lulus/Tidak Lulus:
+        Program menetapkan keterangan kelulusan:
+            Lulus jika nilai akhir > 60
+            Tidak Lulus jika nilai akhir ≤ 60
+
+Mencetak Hasil:
+        Program mencetak nama, nilai UTS, nilai UAS, nilai tugas, nilai akhir, huruf nilai, dan keterangan kelulusan.
 # Flowchart Latihan 1
 ![foto](https://github.com/Nakii-ru/foto/blob/main/latprog1.drawio(1).png?raw=true)
 # Hasil Eksekusi Latihan 1
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-29%20132440.png?raw=true)
+
+# Latihan 2
+
+# Penjelasan Latihan 2
+Kode ini merupakan program sederhana untuk memberikan saran berdasarkan kondisi keuangan dan status sosial seseorang (gaji, status keluarga, dan kepemilikan rumah).
+
+
+Input Data:
+gaji: Meminta pengguna memasukkan jumlah gaji.
+berkeluarga: Memeriksa apakah pengguna sudah berkeluarga atau belum. Akan bernilai True jika pengguna memilih "Y" (Ya) dan False jika "T" (Tidak).
+punya_rumah: Memeriksa apakah pengguna memiliki rumah. Bernilai True untuk "Y" dan False untuk "T".
+
+Pengecekan Gaji:
+Jika gaji lebih besar dari 3.000.000, program akan menampilkan pesan "Gaji Sudah Diatas UMR" dan menjalankan beberapa pengecekan tambahan:
+Status Keluarga:
+Jika berkeluarga bernilai True, program menyarankan ikut asuransi dan menabung untuk pensiun.
+Jika berkeluarga bernilai False, program menampilkan pesan bahwa asuransi tidak diperlukan.
+Status Kepemilikan Rumah:
+Jika punya_rumah bernilai True, program menampilkan pesan untuk membayar pajak rumah.
+Jika punya_rumah bernilai False, tidak ada kewajiban membayar pajak rumah.
+
+Gaji di Bawah UMR:
+Jika gaji ≤ 3.000.000, program akan menampilkan pesan "Gaji Belum UMR" dan tidak melakukan pengecekan tambahan.
+
+# Flowchart Latihan 2
+![foto](https://github.com/Nakii-ru/foto/blob/main/gaji.png?raw=true)
+# Hasil Eksekusi Latihan 2
+![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-29%20193237.png?raw=true)
+
+# Latihan 3
+
+# Penjelasan Latihan 3
+Kode ini memeriksa apakah ada kombinasi penjumlahan dari tiga bilangan yang menghasilkan nilai sama dengan bilangan lainnya.
+
+Penjelasan singkat dari tiap bagian kode:
+
+Input Data:
+Program meminta pengguna untuk memasukkan tiga nilai integer, yaitu `A`, `B`, dan `C`.
+
+Pengecekan Kondisi:
+Program memeriksa apakah salah satu dari kondisi berikut benar:
+`A + B` sama dengan `C`
+`B` + `C` sama dengan `A`
+`C` + `A` sama dengan `B`
+Jika salah satu kondisi terpenuhi, program akan menampilkan "Benar".
+Jika tidak ada kondisi yang terpenuhi, program akan menampilkan "Salah".
+
+kode ini menentukan apakah dua dari tiga angka tersebut bisa dijumlahkan untuk mendapatkan angka ketiga.
+# Flowchart Latihan 3
+![foto](https://github.com/Nakii-ru/foto/blob/main/or.drawio.png?raw=true)
+# Hasil Eksekusi Latihan 3
+![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-29%20194303.png?raw=true)
