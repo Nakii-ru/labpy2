@@ -86,8 +86,8 @@ def hitung(angka1, operator, angka2):
  
     elif operator == '*':
         hasil = angka1 * angka2
- 
- else:
+
+    else:
     operator == '/'
         hasil = angka1 / angka2
  
@@ -140,89 +140,3 @@ Mengembalikan nilai hasil sebagai output dari fungsi hitung. nilai hasil dikemba
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Untitled%20Diagram(2).drawio(1).png?raw=true)
 # Hasil Eksekusi Kasus - 2
 ![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-28%20075642.png?raw=true)
-
-# Latihan 1
-
-
-# Penjelasan Latihan 1
-Kode ini adalah program yg menghitung nilai akhir seorang siswa berdasarkan nilai UTS, UAS, dan Tugas, lalu menentukan huruf nilai dan status kelulusan.
-
-Program meminta pengguna untuk memasukkan `nama`, `uts`, `uas`, dan `tugas`.
-Nilai uts, uas, dan tugas yang dimasukkan adalah string, sehingga perlu dikonversi ke integer untuk perhitungan yg akan dimasukkan dalam 1 variabel `Nilai Akhir`
-        Nilai akhir dihitung berdasarkan bobot:
-            `Tugas` = 20% dari nilai akhir
-            `UTS` = 40% dari nilai akhir
-            `UAS`= 40% dari nilai akhir
-        Rumusnya adalah: akhir = (int(tugas) * .2) + (int(uts) * .4) + (int(uas) * .4)
-
-Menentukan Nilai Huruf:
-        Berdasarkan nilai akhir, program menentukan huruf nilai:
-            `A` jika nilai > 80
-            `B` jika nilai > 70
-            `C` jika nilai > 60
-            `D` jika nilai > 40
-            `E` untuk nilai di bawah atau sama dengan 40
-
-Menentukan Keterangan Lulus/Tidak Lulus:
-        Program menetapkan keterangan kelulusan:
-            Lulus jika nilai akhir > 60
-            Tidak Lulus jika nilai akhir ≤ 60
-
-Mencetak Hasil:
-        Program mencetak nama, nilai UTS, nilai UAS, nilai tugas, nilai akhir, huruf nilai, dan keterangan kelulusan.
-# Flowchart Latihan 1
-![foto](https://github.com/Nakii-ru/foto/blob/main/latprog1.drawio(1).png?raw=true)
-# Hasil Eksekusi Latihan 1
-![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-29%20132440.png?raw=true)
-
-# Latihan 2
-
-# Penjelasan Latihan 2
-Kode ini merupakan program sederhana untuk memberikan saran berdasarkan kondisi keuangan dan status sosial seseorang (gaji, status keluarga, dan kepemilikan rumah).
-
-
-Input Data:
-gaji: Meminta pengguna memasukkan jumlah gaji.
-berkeluarga: Memeriksa apakah pengguna sudah berkeluarga atau belum. Akan bernilai True jika pengguna memilih "Y" (Ya) dan False jika "T" (Tidak).
-punya_rumah: Memeriksa apakah pengguna memiliki rumah. Bernilai True untuk "Y" dan False untuk "T".
-
-Pengecekan Gaji:
-Jika gaji lebih besar dari 3.000.000, program akan menampilkan pesan "Gaji Sudah Diatas UMR" dan menjalankan beberapa pengecekan tambahan:
-Status Keluarga:
-Jika berkeluarga bernilai True, program menyarankan ikut asuransi dan menabung untuk pensiun.
-Jika berkeluarga bernilai False, program menampilkan pesan bahwa asuransi tidak diperlukan.
-Status Kepemilikan Rumah:
-Jika punya_rumah bernilai True, program menampilkan pesan untuk membayar pajak rumah.
-Jika punya_rumah bernilai False, tidak ada kewajiban membayar pajak rumah.
-
-Gaji di Bawah UMR:
-Jika gaji ≤ 3.000.000, program akan menampilkan pesan "Gaji Belum UMR" dan tidak melakukan pengecekan tambahan.
-
-# Flowchart Latihan 2
-![foto](https://github.com/Nakii-ru/foto/blob/main/gaji.png?raw=true)
-# Hasil Eksekusi Latihan 2
-![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-29%20193237.png?raw=true)
-
-# Latihan 3
-
-# Penjelasan Latihan 3
-Kode ini memeriksa apakah ada kombinasi penjumlahan dari tiga bilangan yang menghasilkan nilai sama dengan bilangan lainnya.
-
-Penjelasan singkat dari tiap bagian kode:
-
-Input Data:
-Program meminta pengguna untuk memasukkan tiga nilai integer, yaitu `A`, `B`, dan `C`.
-
-Pengecekan Kondisi:
-Program memeriksa apakah salah satu dari kondisi berikut benar:
-`A + B` sama dengan `C`
-`B` + `C` sama dengan `A`
-`C` + `A` sama dengan `B`
-Jika salah satu kondisi terpenuhi, program akan menampilkan "Benar".
-Jika tidak ada kondisi yang terpenuhi, program akan menampilkan "Salah".
-
-kode ini menentukan apakah dua dari tiga angka tersebut bisa dijumlahkan untuk mendapatkan angka ketiga.
-# Flowchart Latihan 3
-![foto](https://github.com/Nakii-ru/foto/blob/main/or.drawio.png?raw=true)
-# Hasil Eksekusi Latihan 3
-![foto](https://github.com/Nakii-ru/foto/blob/main/Screenshot%202024-10-29%20194303.png?raw=true)
